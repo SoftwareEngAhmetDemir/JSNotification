@@ -1,0 +1,25 @@
+ Notification.requestPermission().then(function (permission) {
+});
+var notification = new Notification('To do list', { body: 'hi lan ulan', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/1200px-Football_iu_1996.jpg' });
+
+
+notification.onclick = function(event) {
+    event.preventDefault(); // prevent the browser from focusing the Notification's tab
+    window.open("https://google.com/",'_blank');
+  }
+  
+  
+  //html .....
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="./deneme.js"></script>
+</html>
